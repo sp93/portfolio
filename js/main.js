@@ -231,12 +231,7 @@ jQuery(document).ready(function($) {
     };
 
     // Switch class on filter
-    var showfilter = jQuery('.works-filter');
-    jQuery('button.nav').on('click', function() {
-        var self = jQuery(this);
-        self.toggleClass('open');
-        showfilter.toggleClass('open');
-    });
+    var showfilter = jQuery('.works-filter').toggleClass('open');
 
     //Architecure Slider
     var archSlider = jQuery('#arch-slider');
